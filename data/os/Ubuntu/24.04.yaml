@@ -9,8 +9,8 @@ pam::common_files:
   - common_session_noninteractive
 
 pam::sshd_pam_access: absent
-pam::pam_d_login_template: pam/login.ubuntu22.erb
-pam::pam_d_sshd_template: pam/sshd.ubuntu22.erb
+pam::pam_d_login_template: pam/login.ubuntu24.erb
+pam::pam_d_sshd_template: pam/sshd.ubuntu24.erb
 pam::package_name: libpam0g
 pam::pam_auth_lines:
   - 'auth	[success=1 default=ignore]	pam_unix.so nullok'
